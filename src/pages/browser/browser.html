@@ -1,0 +1,24 @@
+<!--
+  Generated template for the BrowserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>browser</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background">
+    <button class="menuBtn" ion-button large ion-button round ion-button wide (click)="presentPrompt()">Search</button>
+    <ion-list>
+        <ion-item *ngFor="let movie of movies">
+         <h1>{{movie.Title}}</h1>
+         <p>{{movie.Year}}</p>
+         <ion-img height="200" width="200" src="{{movie.Poster}}"></ion-img>
+         <button ion-button full >Add to watch list</button>
+        </ion-item>
+      </ion-list>
+      <button class="menuBtn" ion-button large ion-button round ion-button wide (click)="backBtn()">Back</button>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="background">
+  <ion-img height="190" width="190" src="../assets/imgs/Logo.png"></ion-img>
+  <h3 class="header">Welcome to the Movies Online Store!</h3>
+  <br>
+  <br>
+  <p>
+    <button class="menuBtn" ion-button large ion-button round ion-button (click)="goToLogin()">Login/Register</button>
+  </p>
+  <p>
+      <button class="menuBtn" ion-button large ion-button round ion-button wide (click)="goToBrowse()">Browse</button>
+  </p>
+  <p>
+      <button class="menuBtn" [hidden]="hiddenBtn" ion-button large ion-button round ion-button (click)="goToWatchList()">Watch List</button>
+  </p>
+  <p>
+      <button class="menuBtn" ion-button large ion-button round ion-button wide (click)="goToAboutUs()">About Us</button>
+  </p>
+</ion-content>
